@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Can You Hear The Music",
+    "artistName": "Ludwig Göransson",
+    "imgurl": "/sources/music cover/Can you hear the music.jpg",
+    "path": "/music/Can You Hear The Music.mp3",
+    "genre": "Soundtrack"
+  },
+  {
+    "id": 2,
+    "name": "Lacrimosa",
+    "artistName": "Mozart",
+    "imgurl": "/sources/music cover/Mozart Lacrimosa.jfif",
+    "path": "/music/Mozart - Lacrimosa.mp3",
+    "genre": "Classical"
+  },
+  {
+    "id": 3,
+    "name": "No Time for Caution",
+    "artistName": "Hans Zimmer",
+    "imgurl": "/sources/music cover/No Time for Caution.webp",
+    "path": "/music/No Time for Caution.mp3",
+    "genre": "Soundtrack"
+  },
+  {
+    "id": 4,
+    "name": "Zara Zara x Tinka Tinka",
+    "artistName": "Rishab Rikhiram Sharma",
+    "imgurl": "/sources/music cover/Zara Zara x Tinka Tinka (Sitar Version).jfif",
+    "path": "/music/Zara Zara x Tinka Tinka (Sitar Version) by Rishab Rikhiram Sharma  Live in Nepal.mp3",
+    "genre": "Indian Classical Fusion"
+  },
+  {
+    "id": 5,
+    "name": "Way Down We Go",
+    "artistName": "KALEO",
+    "imgurl": "/sources/music cover/KALEO - Way Down We Go.jpg",
+    "path": "/music/KALEO - Way Down We Go (Official Music Video).mp3",
+    "genre": "Blues Rock"
+  },
+  {
+    "id": 7,
+    "name": "Die With A Smile",
+    "artistName": "Lady Gaga, Bruno Mars",
+    "imgurl": "/sources/music cover/Die With A Smile.jfif",
+    "path": "/music/Lady Gaga, Bruno Mars - Die With A Smile (Official Music Video).mp3",
+    "genre": "Pop"
+  },
+  {
+    "id": 8,
+    "name": "Glimpse Of Us",
+    "artistName": "Joji",
+    "imgurl": "/sources/music cover/Glimpse Of Us.jpg",
+    "path": "/music/Joji -  Glimpse of Us.mp3",
+    "genre": "Alternative R&B"
+  }
+]

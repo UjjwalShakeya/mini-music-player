@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appify</title>
+
+    <!-- Font Awesome CDN -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!--  style is added right here -->
+    <link rel="stylesheet" href="style.css" />
+    <!--  scrip is added right here -->
+    <script type="module" src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- main wrapper starts here -->
+    <main id="main-box">
+      <!-- leftside stars here -->
+      <aside id="sidebar">
+        <!-- library started here -->
+        <div id="library">
+          <header>
+            <h2 class="text-primary heading">Library</h2>
+            <p class="text-primary sub-heading">All Music</p>
+          </header>
+
+          <!-- All Liberary Buttons added -->
+          <ul class="lib-btns-box">
+            <li class="lib-btn text-primary">
+              <span class="icons"><i class="fa-regular fa-clock"></i></span
+              >Recently Add
+            </li>
+            <li class="lib-btn text-primary">
+              <span class="icons"><i class="fa-solid fa-guitar"></i></span
+              >Artist
+            </li>
+            <li class="lib-btn text-primary">
+              <span class="icons"><i class="fa-solid fa-compact-disc"></i></span
+              >Album
+            </li>
+            <li class="lib-btn text-primary">
+              <span class="icons"><i class="fa-solid fa-music"></i></span>Songs
+            </li>
+            <li class="lib-btn text-primary">
+              <span class="icons"><i class="fa-solid fa-user"></i></span>Made
+              for you
+            </li>
+          </ul>
+        </div>
+
+        <!-- playlist started here -->
+        <div id="playlist">
+          <div class="play-list-header">
+            <h3 class="heading">Playlist</h3>
+            <!-- todo ~ adding toggle-icon -->
+          </div>
+
+          <!-- playlist container started-->
+          <div id="playlist-container">
+            <button class="show-playlists-btn text-primary">
+              <span class="cube-icon"
+                ><i class="fa-solid fa-cubes-stacked"></i></span
+              >All Playlists
+            </button>
+
+            <div id="playlist-list"></div>
+
+            <button id="add-playlist-btn" class="text-primary">
+              <span>+</span>Add Playlist
+            </button>
+          </div>
+          <!-- playlist container ended here -->
+        </div>
+      </aside>
+      <!-- leftside ends here -->
+
+      <!-- main wrapper section started -->
+      <section id="wrapper">
+        <header id="header">
+          <div class="app-details">
+            <div class="left">
+              <h2 id="app-Name" class="text-primary heading">Appify</h2>
+              <p class="sub-heading" id="total-songs"></p>
+            </div>
+
+            <div class="right">
+              <button id="toggle-btn">
+                <i class="fa-solid fa-bars-staggered"></i>
+              </button>
+
+              <!-- user profile item -->
+              <div class="user-profile">
+                <div class="user-img-box">
+                  <img src="/sources/User/Ujjwal.jpg" alt="no-image" />
+                </div>
+                <div class="user-name-box">
+                  <h2 id="user-name" class="text-primary">Ujjwal Shakeya</h2>
+                </div>
+                <div class="signup-box">
+                  <button id="sign-up-btn">Log In</button>
+                </div>
+
+                <!-- header section for the create an account and for creating an toggle theme switcher -->
+                <div class="header-actions">
+                  <div class="account-section">
+                    <a href="#" class="create-account-link"
+                      >Create an Account</a
+                    >
+                  </div>
+                  <div class="theme-toggle">
+                    <button id="theme-toggle-btn"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="genre-filter">
+            <select id="select-genre" class="sub-heading"></select>
+          </div>
+        </header>
+        <!-- header ended right here -->
+
+        <!-- all songs  -->
+        <div id="all-songs"></div>
+
+        <!-- media player at the bottom -->
+        <div class="media-player">
+          <!-- progress bar -->
+          <div class="progress-bar-box">
+            <div id="progress-bar"></div>
+          </div>
+          <div class="music-control">
+            <span id="prevBtn" class="fa-solid fa-backward"></span>
+            <span id="playBtn" class="fa-solid fa-play"></span>
+            <span id="nextBtn" class="fa-solid fa-forward"></span>
+          </div>
+          <div class="song-content">
+            <img src="" alt="Album Cover" />
+            <div class="song-info">
+              <p class="title text-primary"></p>
+              <p class="artist sub-heading"></p>
+            </div>
+            <div class="right-box">
+              <span><i class="fa-solid fa-star"></i></span>
+              <span id="bar-setting-option"><i class="fa-solid fa-ellipsis"></i></span>
+            </div>
+          </div>
+
+          <div class="volume-control">
+            <span><i class="fa-solid fa-volume-high"></i></span>
+
+            <div class="control-box">
+              <div class="volume-area">
+                  <div class="volume-slider-bar">
+                      <div class="volume-slider-handle" id="volume-handle"></div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!-- media player ended here-->
+      </section>
+    </main>
+
+    <!-- PlaylistModal Modal Structure -->
+    <div class="playlistModal">
+      <div class="list-modal">
+        <button class="close-modal-btn">&times;</button>
+        <!-- top section -->
+        <header class="head-section">
+          <h5 class="heading">Audio Player</h5>
+        </header>
+        <!-- all available list would be dinamically generated here -->
+        <div class="playlist-item"></div>
+      </div>
+    </div>
+  </body>
+</html>
